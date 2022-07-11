@@ -5,18 +5,18 @@
       <h1 class="text-center mt-5">PAGO DE CUENTAS</h1>
       <v-row>
         <v-col cols="3">
-          <v-text-field
+          <v-select
             v-model="message1"
             label="Cuenta"
             clearable
-          ></v-text-field>
+          ></v-select>
         </v-col>
         <v-col cols="3">
-          <v-text-field
+          <v-select
             v-model="message1"
             label="Quién paga"
             clearable
-          ></v-text-field>
+          ></v-select>
         </v-col>
         <v-col cols="3">
           <v-text-field

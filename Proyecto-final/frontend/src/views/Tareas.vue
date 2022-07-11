@@ -4,18 +4,18 @@
       <h1 class="text-center mt-5">TAREAS</h1>
       <v-row>
         <v-col cols="3">
-          <v-text-field
+          <v-select
             v-model="message1"
             label="Tarea"
             clearable
-          ></v-text-field>
+          ></v-select>
         </v-col>
         <v-col cols="3">
-          <v-text-field
+          <v-select
             v-model="message1"
             label="Quién la realiza"
             clearable
-          ></v-text-field>
+          ></v-select>
         </v-col>
         <v-col cols="3">
           <v-text-field

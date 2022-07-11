@@ -4,6 +4,7 @@ import router from './router'
 import vuetify from './plugins/vuetify'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import './css/style.css'
 
 Vue.use(VueAxios, axios);
 
