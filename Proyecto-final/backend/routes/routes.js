@@ -8,9 +8,7 @@ router.post('/usuarios', route.agregarUsuarios)
 
 router.get("/usuarios", route.getUsuarios)
 
-router.put("/usuarios/:id", route.editarUsuarios)
-
-router.delete("/usuarios/:id", route.eliminarUsuarios)
+router.delete("/usuarios", route.eliminarUsuarios)
 
 
 // Agregar tareas
@@ -19,14 +17,18 @@ router.post('/tarea', route.agregarTarea)
 
 router.get("/tarea", route.getTarea)
 
-router.put("/tarea/:id", route.editarTarea)
+router.put("/tarea", route.editarTarea)
 
-router.delete("/tarea/:id", route.eliminarTarea)
+router.delete("/tarea", route.eliminarTarea)
 
 // Agregar pagos
 
 router.post('/pago', route.agregarPago)
 
+router.put("/pago", route.editarPago)
+
 router.get("/pago", route.getPago)
+
+router.delete("/pago", route.eliminarPago)
 
 module.exports = router;
