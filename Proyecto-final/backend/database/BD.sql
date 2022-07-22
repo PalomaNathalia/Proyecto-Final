@@ -13,3 +13,4 @@ UPDATE cuentas SET estado = false;
 ALTER TABLE tareas ALTER COLUMN fecha varchar(50);
 ALTER TABLE cuentas DROP estado;
 ALTER TABLE cuentas ADD comprobante varchar(200);
+ALTER TABLE cuentas DROP comprobante;

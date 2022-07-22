@@ -11,7 +11,11 @@
           ></v-text-field>
         </v-col>
         <v-col cols="3">
-          <v-text-field v-model="nombre_usuario" label="Quién la realiza" clearable>
+          <v-text-field
+            v-model="nombre_usuario"
+            label="Quién la realiza"
+            clearable
+          >
           </v-text-field>
         </v-col>
         <v-col cols="3">

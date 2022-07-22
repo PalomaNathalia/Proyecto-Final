@@ -1,34 +1,29 @@
-const route = require('../controllers/consultas');
+const route = require("../controllers/consultas");
 const express = require("express");
 const router = express.Router();
 
 // Agregar usuarios
 
-router.post('/usuarios', route.agregarUsuarios)
+router.post("/usuarios", route.agregarUsuarios);
 
-router.get("/usuarios", route.getUsuarios)
+router.get("/usuarios", route.getUsuarios);
 
-router.delete("/usuarios", route.eliminarUsuarios)
-
+router.delete("/usuarios", route.eliminarUsuarios);
 
 // Agregar tareas
 
-router.post('/tarea', route.agregarTarea)
+router.post("/tarea", route.agregarTarea);
 
-router.get("/tarea", route.getTarea)
+router.get("/tarea", route.getTarea);
 
-router.put("/tarea", route.editarTarea)
-
-router.delete("/tarea", route.eliminarTarea)
+router.delete("/tarea", route.eliminarTarea);
 
 // Agregar pagos
 
-router.post('/pago', route.agregarPago)
+router.post("/pago", route.agregarPago);
 
-router.put("/pago", route.editarPago)
+router.get("/pago", route.getPago);
 
-router.get("/pago", route.getPago)
-
-router.delete("/pago", route.eliminarPago)
+router.delete("/pago", route.eliminarPago);
 
 module.exports = router;

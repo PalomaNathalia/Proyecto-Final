@@ -40,8 +40,8 @@
             </thead>
             <tbody>
               <tr v-for="persona in personas" :key="persona.id">
-                <td>{{persona.nombre_usuario}}</td>
-                <td>{{persona.monto}}</td>
+                <td>{{ persona.nombre_usuario }}</td>
+                <td>{{ persona.monto }}</td>
                 <td>
                   <!-- <v-btn
                     class="deep-purple lighten-4 white--text"
@@ -85,7 +85,6 @@ export default {
   data() {
     return {
       personas: [],
-      // persona: {},
       nombre_usuario: "",
       monto: Number(),
     };
@@ -111,19 +110,6 @@ export default {
       }
     },
 
-    // //  Editar
-    // async editarUsuario(id) {
-    //   try {
-    //     const user = await axios.put(`/usuarios?id=${id}`, {
-    //       nombre: this.nombre,
-    //       monto: this.monto,
-    //     });
-    //     console.log(user);
-    //     // location.reload();
-    //   } catch (error) {
-    //     alert("Usuario no editado " + error);
-    //   }
-    // },
     // ELIMINAR
     async eliminarUsuario(id) {
       try {
